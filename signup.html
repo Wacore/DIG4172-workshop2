@@ -37,15 +37,12 @@
         </ul>
       </header>
 
-      <div class="login-container">
-        <div class="login-cover-box">
-          <h3>cover image</h3>
-          <img src="" alt="" />
-        </div>
-        <div class="login-form-container">
+      <div class="signup-container">
+        <div class="signup-form-container">
           <form action="">
             <div class="form-title">
-              <span>Login</span><span><a href="./signup.html">Join us</a></span>
+              <span>Register</span
+              ><span><a href="./signup.html">Have an account already?</a></span>
             </div>
             <div class="input-box">
               <div class="input-field">
@@ -53,14 +50,29 @@
                 <input type="text" name="username" id="username" />
               </div>
               <div class="input-field">
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email" />
+              </div>
+              <div class="input-field">
                 <label for="password">Password</label>
                 <input type="text" name="password" id="password" />
               </div>
+              <div class="input-field">
+                <label for="comfirmPassword">Comfirm password</label>
+                <input
+                  type="text"
+                  name="comfirmPassword"
+                  id="comfirmPassword"
+                />
+              </div>
 
-              <a href="#">Forget Password</a>
-              <input type="submit" value="Login" />
+              <input type="submit" value="Create an account" />
             </div>
           </form>
+        </div>
+        <div class="signup-cover-box">
+          <h3>cover image</h3>
+          <img src="" alt="" />
         </div>
       </div>
     </section>

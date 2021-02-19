@@ -12,14 +12,16 @@
 
   display: grid;
 
-  .login-cover-box {
+  .login-cover-box,
+  .signup-cover-box {
     width: 100%;
     height: 100%;
     display: grid;
     place-items: center;
   }
 
-  .login-form-container form {
+  .login-form-container form,
+  .signup-form-container form {
     height: 100%;
     width: 100%;
     display: grid;
@@ -85,9 +87,13 @@ footer {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  .hero-section .login-container,
-  .hero-section .signup-container {
+  .hero-section .login-container {
     grid-template-columns: calc(100% - 450px) 450px;
+    align-items: center;
+  }
+
+  .hero-section .signup-container {
+    grid-template-columns: 450px calc(100% - 450px);
     align-items: center;
   }
 }

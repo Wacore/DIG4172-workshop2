@@ -14,7 +14,9 @@
 }
 
 .hero-section .login-container .login-cover-box,
-.hero-section .signup-container .login-cover-box {
+.hero-section .login-container .signup-cover-box,
+.hero-section .signup-container .login-cover-box,
+.hero-section .signup-container .signup-cover-box {
   width: 100%;
   height: 100%;
   display: -ms-grid;
@@ -23,7 +25,9 @@
 }
 
 .hero-section .login-container .login-form-container form,
-.hero-section .signup-container .login-form-container form {
+.hero-section .login-container .signup-form-container form,
+.hero-section .signup-container .login-form-container form,
+.hero-section .signup-container .signup-form-container form {
   height: 100%;
   width: 100%;
   display: -ms-grid;
@@ -33,7 +37,9 @@
 }
 
 .hero-section .login-container .login-form-container form .form-title,
-.hero-section .signup-container .login-form-container form .form-title {
+.hero-section .login-container .signup-form-container form .form-title,
+.hero-section .signup-container .login-form-container form .form-title,
+.hero-section .signup-container .signup-form-container form .form-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -43,13 +49,17 @@
 }
 
 .hero-section .login-container .login-form-container form span,
-.hero-section .signup-container .login-form-container form span {
+.hero-section .login-container .signup-form-container form span,
+.hero-section .signup-container .login-form-container form span,
+.hero-section .signup-container .signup-form-container form span {
   -ms-grid-column-align: center;
       justify-self: center;
 }
 
 .hero-section .login-container .login-form-container form .input-box,
-.hero-section .signup-container .login-form-container form .input-box {
+.hero-section .login-container .signup-form-container form .input-box,
+.hero-section .signup-container .login-form-container form .input-box,
+.hero-section .signup-container .signup-form-container form .input-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -60,31 +70,43 @@
 }
 
 .hero-section .login-container .login-form-container form .input-box a,
-.hero-section .signup-container .login-form-container form .input-box a {
+.hero-section .login-container .signup-form-container form .input-box a,
+.hero-section .signup-container .login-form-container form .input-box a,
+.hero-section .signup-container .signup-form-container form .input-box a {
   padding-bottom: 8px;
   border-bottom: 1px solid black;
 }
 
 .hero-section .login-container .login-form-container form .input-box input[type="submit"],
-.hero-section .signup-container .login-form-container form .input-box input[type="submit"] {
+.hero-section .login-container .signup-form-container form .input-box input[type="submit"],
+.hero-section .signup-container .login-form-container form .input-box input[type="submit"],
+.hero-section .signup-container .signup-form-container form .input-box input[type="submit"] {
   padding: 8px 0;
   margin: 1.5em 0;
 }
 
 .hero-section .login-container .login-form-container form .input-box .input-field,
-.hero-section .signup-container .login-form-container form .input-box .input-field {
+.hero-section .login-container .signup-form-container form .input-box .input-field,
+.hero-section .signup-container .login-form-container form .input-box .input-field,
+.hero-section .signup-container .signup-form-container form .input-box .input-field {
   margin-bottom: 1em;
 }
 
 .hero-section .login-container .login-form-container form .input-box .input-field label,
 .hero-section .login-container .login-form-container form .input-box .input-field input,
+.hero-section .login-container .signup-form-container form .input-box .input-field label,
+.hero-section .login-container .signup-form-container form .input-box .input-field input,
 .hero-section .signup-container .login-form-container form .input-box .input-field label,
-.hero-section .signup-container .login-form-container form .input-box .input-field input {
+.hero-section .signup-container .login-form-container form .input-box .input-field input,
+.hero-section .signup-container .signup-form-container form .input-box .input-field label,
+.hero-section .signup-container .signup-form-container form .input-box .input-field input {
   display: block;
 }
 
 .hero-section .login-container .login-form-container form .input-box .input-field input,
-.hero-section .signup-container .login-form-container form .input-box .input-field input {
+.hero-section .login-container .signup-form-container form .input-box .input-field input,
+.hero-section .signup-container .login-form-container form .input-box .input-field input,
+.hero-section .signup-container .signup-form-container form .input-box .input-field input {
   margin: 0.5em 0;
   width: 100%;
   height: 25px;
@@ -114,10 +136,16 @@ footer {
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1440px) {
-  .hero-section .login-container,
-  .hero-section .signup-container {
+  .hero-section .login-container {
     -ms-grid-columns: calc(100% - 450px) 450px;
         grid-template-columns: calc(100% - 450px) 450px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero-section .signup-container {
+    -ms-grid-columns: 450px calc(100% - 450px);
+        grid-template-columns: 450px calc(100% - 450px);
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
