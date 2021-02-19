@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hak-Zen Login</title>
     <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/login-signup.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <section class="hero-section">
@@ -30,16 +37,27 @@
 
       <div class="login-container">
         <div class="login-cover-box">
+          <h3>cover image</h3>
           <img src="" alt="" />
         </div>
         <div class="login-form-container">
           <form action="">
-            <label for="username">Username</label>
-            <input type="text" name="username" id="username" />
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password" />
-            <a href="#">Forget Password</a>
-            <button type="submit">Login</button>
+            <div class="form-title">
+              <span>Login</span><span><a href="">Join us</a></span>
+            </div>
+            <div class="input-box">
+              <div class="input-field">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" />
+              </div>
+              <div class="input-field">
+                <label for="password">Password</label>
+                <input type="text" name="password" id="password" />
+              </div>
+
+              <a href="#">Forget Password</a>
+              <input type="submit" value="Login" />
+            </div>
           </form>
         </div>
       </div>
@@ -74,5 +92,15 @@
         </div>
       </div>
     </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#menu").click(() => {
+        $(".nav").toggleClass("active");
+      });
+    </script>
   </body>
 </html>
