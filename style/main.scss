@@ -69,6 +69,7 @@ a {
   .hero-container {
     width: 90%;
     max-width: 500px;
+    z-index: 1;
 
     .hero-text {
       font-size: 32px;
@@ -261,6 +262,7 @@ a {
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     transform-origin: top;
+    z-index: 2;
 
     transition: height 150ms ease-in, opacity 100ms ease-in-out 50ms;
 

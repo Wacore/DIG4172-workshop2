@@ -58,6 +58,7 @@ a {
 .hero-section .hero-container {
   width: 90%;
   max-width: 500px;
+  z-index: 1;
 }
 
 .hero-section .hero-container .hero-text {
@@ -298,6 +299,7 @@ a {
     border-bottom-right-radius: 5px;
     -webkit-transform-origin: top;
             transform-origin: top;
+    z-index: 2;
     -webkit-transition: height 150ms ease-in, opacity 100ms ease-in-out 50ms;
     transition: height 150ms ease-in, opacity 100ms ease-in-out 50ms;
   }

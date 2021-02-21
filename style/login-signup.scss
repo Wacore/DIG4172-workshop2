@@ -75,6 +75,10 @@ footer {
   .hero-section .login-container,
   .hero-section .signup-container {
     grid-template-rows: 30% 70%;
+
+    .signup-form-container {
+      grid-row: 2 / span 1;
+    }
   }
 }
 
