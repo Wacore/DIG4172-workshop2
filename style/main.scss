@@ -18,6 +18,10 @@ $black: rgb(20, 20, 20);
   padding: 0.5em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
