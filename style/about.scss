@@ -1,0 +1,244 @@
+body {
+  .hero-section {
+    display: grid;
+    place-items: center;
+
+    .about-hero-container {
+      height: 75%;
+      width: 95%;
+      display: grid;
+      grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+      grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+
+      #aboutContainer {
+        grid-column: 3 / span 6;
+        grid-row: 5 / span 2;
+      }
+
+      #imageBox1 {
+        background-image: url("../images/hero-image-sample.jpg");
+        grid-column: 1 / span 3;
+        grid-row: 1 / span 3;
+      }
+      #imageBox2 {
+        background-image: url("../images/hero-image-sample.jpg");
+        grid-column: 5 / span 6;
+        grid-row: 1 / span 1;
+      }
+      #imageBox3 {
+        background-image: url("../images/hero-image-sample.jpg");
+        grid-column: 10 / span 1;
+        grid-row: 2 / span 1;
+      }
+      #imageBox4 {
+        background-image: url("../images/hero-image-sample.jpg");
+        grid-column: 5 / span 6;
+        grid-row: 9 / span 2;
+      }
+      #imageBox5 {
+        background-image: url("../images/hero-image-sample.jpg");
+        grid-column: 1 / span 2;
+        grid-row: 7 / span 5;
+      }
+      #imageBox6 {
+        background-image: url("../images/hero-image-sample.jpg");
+        grid-column: 10 / span 1;
+        grid-row: 6 / span 2;
+      }
+    }
+  }
+
+  .about-section {
+    height: 70vh;
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+    display: grid;
+
+    .about-slogan {
+      width: 100%;
+      height: 100%;
+      position: relative;
+
+      .slogan {
+        width: 400px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .about-main {
+      width: 85%;
+      height: 100%;
+      justify-self: center;
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+      background-color: rgba($color: #eeeeee, $alpha: 1);
+      padding: 1.5em;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    .about-section {
+      grid-template-rows: 20vh 50vh;
+      width: 500px;
+      max-width: 500px;
+    }
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  body {
+    .hero-section {
+      .about-hero-container {
+        height: 75%;
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .about-section {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 973px) {
+  body {
+    .about-section {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      overflow: hidden;
+
+      .about-slogan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+
+        .slogan {
+          width: 300px;
+          max-width: 60%;
+          left: 10%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      .about-main {
+        position: absolute;
+        width: 600px;
+        max-width: 800px;
+        height: 80%;
+        top: 50%;
+        right: -30%;
+        border-bottom-left-radius: 20px;
+
+        transform: translate(0, -50%);
+
+        .about-content {
+          width: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 974px) and (max-width: 1200px) {
+  body {
+    .about-section {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      overflow: hidden;
+
+      .about-slogan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+
+        .slogan {
+          width: 500px;
+          max-width: 60%;
+          left: 10%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      .about-main {
+        position: absolute;
+        width: 800px;
+        max-width: 800px;
+        height: 80%;
+        top: 50%;
+        right: -35%;
+        border-bottom-left-radius: 20px;
+
+        transform: translate(0, -50%);
+
+        .about-content {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  body {
+    .about-section {
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      display: block;
+      position: relative;
+      overflow: hidden;
+
+      .about-slogan {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+
+        .slogan {
+          width: 500px;
+          max-width: 60%;
+          left: 10%;
+          transform: translate(0, -50%);
+        }
+      }
+
+      .about-main {
+        position: absolute;
+        width: 750px;
+        max-width: 800px;
+        height: 80%;
+        top: 50%;
+        right: -10%;
+        border-bottom-left-radius: 20px;
+
+        transform: translate(0, -50%);
+
+        .about-content {
+          width: 500px;
+        }
+      }
+    }
+  }
+}
