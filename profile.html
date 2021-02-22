@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hak-Zen</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="hero-section">
+      <header class="hero-header">
+        <div class="logo">Logo Hak-Zen</div>
+        <div class="menu-box" id="menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="./groups.html">Groups</a></li>
+          <li><a href="./about.html">About</a></li>
+
+          <li class="btn">
+            <a href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li class="btn btn-primary">
+            <a href="./signup.html"
+              ><i class="fas fa-user-plus"></i>Register
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="about-hero-container">
+        <div id="imageBox1"></div>
+        <div id="imageBox2"></div>
+        <div id="imageBox3"></div>
+        <div id="imageBox4"></div>
+        <div id="imageBox5"></div>
+        <div id="imageBox6"></div>
+        <div id="aboutContainer">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique,
+            quaerat quo! Vel ratione veritatis cum dolor molestias dolores
+            soluta,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="about-slogan">
+        <span class="slogan">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+          ipsa, laboriosam dolore molestias expedita ea, nobis excepturi a ex
+        </span>
+      </div>
+      <div class="about-main">
+        <p class="about-content">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quis
+          laborum nihil recusandae est voluptatibus nulla quo, praesentium
+          incidunt nisi officiis ratione. Expedita, ad inventore! Architecto
+          accusamus officiis inventore dolorem?
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="info-container">
+        <div class="info-col footer-logo">
+          <h3>Hak-Zen</h3>
+        </div>
+        <div class="info-col footer-navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="info-col footer-groups">
+          <h4>Groups</h4>
+          <ul>
+            <li><a href="">Group 1</a></li>
+            <li><a href="">Group 2</a></li>
+            <li><a href="">Group 3</a></li>
+            <li><a href="">Group 4</a></li>
+            <li><a href="">Group 5</a></li>
+            <li><a href="">Group 6</a></li>
+            <li><a href="">Group 7</a></li>
+            <li><a href="">Group 8</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#menu").click(() => {
+        $(".nav").toggleClass("active");
+      });
+    </script>
+  </body>
+</html>

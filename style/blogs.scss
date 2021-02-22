@@ -154,6 +154,18 @@ body {
   }
 }
 
+@media only screen and (max-width: 500px) {
+  body {
+    .blog-section {
+      .blog-container {
+        max-width: 450px;
+        max-width: 550px;
+        grid-template-rows: 50% 50%;
+      }
+    }
+  }
+}
+
 @media only screen and (min-width: 501px) {
   body {
     .hero-section {
