@@ -1,0 +1,335 @@
+.blog-container {
+  width: 450px;
+  height: 350px;
+  margin: 1em auto;
+  display: -ms-grid;
+  display: grid;
+}
+
+.blog-container .blog-img {
+  height: 100%;
+  width: 100%;
+  background-image: url("../images/hero-image-sample.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.blog-container .blog-main {
+  height: 100%;
+  width: 100%;
+}
+
+.blog-container .blog-main h2 {
+  margin: 0.5rem 0;
+}
+
+.blog-container .blog-main .blog-date {
+  display: block;
+  font-size: 14px;
+}
+
+.blog-container .blog-main p {
+  margin: 0.1em 0;
+}
+
+.blog-container .blog-main .blog-content {
+  max-width: 450px;
+  overflow: hidden;
+  font-size: 16px;
+  margin-bottom: 0.3em;
+}
+
+.blog-container .blog-main .blog-content .line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.blog-container .blog-main .blog-more {
+  float: right;
+}
+
+body .hero-section {
+  height: 40vh;
+}
+
+body .hero-section .hero-header {
+  z-index: 3;
+}
+
+body .hero-section .profile-hero-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+body .hero-section .profile-hero-container .user-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: white;
+  overflow: hidden;
+  z-index: 2;
+}
+
+body .hero-section .profile-hero-container .user-image img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+body .hero-section .profile-hero-container .user-info {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 45%;
+  width: 100%;
+  background-color: #f7f7f7;
+  z-index: 1;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .hero-section .profile-hero-container .user-info .user-name {
+  text-align: center;
+  font-size: 20px;
+}
+
+body .hero-section .profile-hero-container .user-info .user-desc {
+  font-size: 15px;
+}
+
+body .hero-section .profile-hero-container .user-info .user-settings {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+body .hero-section .profile-hero-container .user-info .user-settings i {
+  margin-right: 0.3em;
+}
+
+.user-activity-section {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+.user-activity-section .user-activity-list {
+  width: 100%;
+  padding-bottom: 15px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 1em;
+}
+
+.user-activity-section .user-activity-list ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-activity-section .user-activity-list ul li {
+  margin: 0 0.5em;
+  list-style: none;
+  cursor: pointer;
+}
+
+.user-activity-section .user-activity-main {
+  width: 100%;
+  max-width: 500px;
+}
+
+.user-activity-section .user-activity-main .post-form .input-feild {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.user-activity-section .user-activity-main .post-form .input-feild input,
+.user-activity-section .user-activity-main .post-form .input-feild select {
+  padding: 5px 10px;
+}
+
+.user-activity-section .user-activity-main .post-form .input-feild input,
+.user-activity-section .user-activity-main .post-form .input-feild select,
+.user-activity-section .user-activity-main .post-form .input-feild textarea {
+  margin: 0.3em 0;
+}
+
+.user-activity-section .user-activity-main .post-form .input-textarea {
+  height: 300px;
+}
+
+.user-activity-section .user-activity-main .post-form .input-textarea textarea {
+  height: 100%;
+  resize: none;
+  overflow-y: scroll;
+  padding: 0.5em;
+}
+
+.user-activity-section .user-activity-main .post-form .post-btn {
+  padding: 5px 25px;
+}
+
+.user-activity-section .user-activity-main .user-groups {
+  width: 100%;
+  max-width: 500px;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-activity-section .user-activity-main .user-groups .user-group-container {
+  width: 200px;
+  height: 200px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.user-activity-section .user-activity-main .user-groups .user-group-container .group-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  background-color: #cecece;
+}
+
+.user-activity-section .user-activity-main .user-groups .user-group-container .group-img img {
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+}
+
+.user-activity-section .user-activity-main .user-groups .user-group-container .group-view-btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 500px) {
+  .blog-container {
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+  .blog-container {
+    -ms-grid-rows: 50% 50%;
+        grid-template-rows: 50% 50%;
+  }
+  body .hero-section .user-desc {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .user-activity-section {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .blog-container {
+    -ms-grid-columns: 200px 400px;
+        grid-template-columns: 200px 400px;
+    height: 200px;
+    width: 100%;
+    max-width: 600px;
+  }
+  .blog-container .blog-main {
+    margin-left: 1em;
+  }
+  .user-activity-main {
+    max-width: 700px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  body .hero-section .profile-hero-container .user-info {
+    left: 10%;
+    right: 10%;
+    width: 700px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 auto;
+  }
+  body .hero-section .profile-hero-container .user-info .user-desc {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .user-activity-section {
+    max-width: 100%;
+    padding: 1.5em;
+  }
+  .user-activity-section .user-activity-main {
+    max-width: 700px;
+  }
+  .user-activity-section .user-activity-main .user-groups {
+    height: 50vh;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  body .hero-section {
+    height: 50vh;
+  }
+  body .hero-section .profile-hero-container .user-info {
+    left: 10%;
+    right: 10%;
+    width: 900px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 0 auto;
+  }
+  body .hero-section .profile-hero-container .user-info .user-desc {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .user-activity-section {
+    max-width: 100%;
+    padding: 2em;
+  }
+  .user-activity-section .user-activity-main {
+    max-width: 700px;
+  }
+  .user-activity-section .user-activity-main .user-groups {
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=profile.css.map */
