@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hak-Zen</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/groups.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="hero-section">
+      <header class="hero-header">
+        <div class="logo">Logo Hak-Zen</div>
+        <div class="menu-box" id="menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="./groups.html">Groups</a></li>
+          <li><a href="./about.html">About</a></li>
+
+          <li class="btn">
+            <a href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li class="btn btn-primary">
+            <a href="./signup.html"
+              ><i class="fas fa-user-plus"></i>Register
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="group-hero-container">
+        <div class="group-hero-content">
+          <h2>Meet Your New Family</h2>
+          <h1 class="group-name">Group Name</h1>
+          <p class="group-text">
+            Our groups coonect you to the students who are struggling with
+            similiar issues. Click on 'Join the group' to learn more information
+          </p>
+          <a class="group-btn" href="./login.html">Join the group</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="groups">
+      <div class="groups-container">
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group1')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group2')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group3')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group4')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group5')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group6')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group7')"
+            >Learn more</a
+          >
+        </div>
+
+        <div class="card group-card">
+          <div class="group-img">
+            <img src="./images/hero-image-sample.jpg" alt="" />
+          </div>
+          <h4 class="card-title">card title</h4>
+          <p class="card-content">card content</p>
+
+          <a
+            href="#"
+            class="card-action group-action"
+            onclick="renderGroup(event, 'group8')"
+            >Learn more</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="group-info">
+      <div class="group-info-container">
+        <div class="intro-side">
+          <h2>Slogan</h2>
+        </div>
+        <div class="intro-main">
+          <h3 class="intro-title">Intro</h3>
+          <p class="intro-content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur reprehenderit, dolorem repellat magni perferendis
+            tempora dolore veritatis voluptatibus cupiditate molestias! Animi,
+            eaque.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <ul class="groups-list">
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 1</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 2</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 3</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 4</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 5</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 6</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 7</a>
+      </li>
+      <li>
+        <div class="group-img">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <a href="">Group 8</a>
+      </li>
+    </ul>
+
+    <footer>
+      <div class="info-container">
+        <div class="info-col footer-logo">
+          <h3>Hak-Zen</h3>
+        </div>
+        <div class="info-col footer-navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="info-col footer-groups">
+          <h4>Groups</h4>
+          <ul>
+            <li><a href="">Group 1</a></li>
+            <li><a href="">Group 2</a></li>
+            <li><a href="">Group 3</a></li>
+            <li><a href="">Group 4</a></li>
+            <li><a href="">Group 5</a></li>
+            <li><a href="">Group 6</a></li>
+            <li><a href="">Group 7</a></li>
+            <li><a href="">Group 8</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#menu").click(() => {
+        $(".nav").toggleClass("active");
+      });
+
+      function renderGroup(event, keyword) {
+        event.preventDefault();
+
+        let groupItem = groups[keyword];
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+        $(".groups-list").css("display", "block");
+
+        $(".groups").addClass("fade-out");
+        $(".groups").addClass("none");
+
+        $(".group-name").text(groupItem.name);
+        $(".intro-title").text(groupItem.title);
+        $(".intro-content").text(groupItem.content);
+      }
+
+      let groups = {
+        group1: {
+          name: "group1",
+          title: "title 1",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group2: {
+          name: "group2",
+          title: "title 2",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group3: {
+          name: "group3",
+          title: "title 3",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+
+        group4: {
+          name: "group4",
+          title: "title 4",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group5: {
+          name: "group5",
+          title: "title 5",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group6: {
+          name: "group6",
+          title: "title 6",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group7: {
+          name: "group7",
+          title: "title 7",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+
+        group8: {
+          name: "group8",
+          title: "title 8",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+      };
+    </script>
+  </body>
+</html>

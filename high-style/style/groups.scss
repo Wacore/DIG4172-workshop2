@@ -1,0 +1,160 @@
+body {
+  .hero-section {
+    height: 30vh;
+
+    .group-hero-container {
+      position: absolute;
+      top: 50%;
+      left: 5%;
+      transform: translate(0, -50%);
+      width: 450px;
+      height: 120px;
+
+      h2 {
+        font-size: 1em;
+      }
+
+      h1 {
+        margin: 0.3em 0;
+      }
+
+      p {
+        margin-bottom: 1em;
+      }
+
+      .group-btn {
+        padding: 5px 8px;
+        border: 1px solid black;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+    }
+  }
+
+  .groups {
+    background-color: #eee;
+    display: block;
+    opacity: 1;
+    transition: opacity 200ms ease-out;
+
+    .groups-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  .groups.none {
+    display: none;
+  }
+
+  .groups.fade-out {
+    opacity: 0;
+  }
+
+  .group-info {
+    height: 60vh;
+
+    .group-info-container {
+      display: grid;
+
+      .intro-side {
+        display: grid;
+        place-items: center;
+      }
+
+      .intro-main {
+        padding: 1.5em;
+
+        h3 {
+          text-align: center;
+          margin: 0.5em 0;
+        }
+      }
+    }
+  }
+
+  .groups-list {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+    list-style: none;
+    overflow-x: hidden;
+    width: 150px;
+    display: none;
+
+    li {
+      height: 50px;
+      width: 150px;
+      overflow-x: hidden;
+      display: flex;
+      align-items: center;
+      margin: 5px;
+      position: relative;
+      opacity: 0.5;
+
+      .group-img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        position: absolute;
+        right: 0;
+        transition: 150ms ease-in-out;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      a {
+        position: absolute;
+        right: -100px;
+        width: 100px;
+        opacity: 1;
+        margin-left: 0.5em;
+        transition: 150ms ease-in-out;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:hover .group-img {
+        right: 100px;
+      }
+      &:hover a {
+        right: -5px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  body {
+    .group-info {
+      .group-info-container {
+        grid-template-rows: 30vh 30vh;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  body {
+    .hero-section {
+      height: 50vh;
+    }
+
+    .group-info {
+      .group-info-container {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+        place-items: center;
+      }
+    }
+  }
+}

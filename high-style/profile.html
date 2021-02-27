@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hak-Zen</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/profile.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="hero-section">
+      <header class="hero-header">
+        <div class="logo">Logo Hak-Zen</div>
+        <div class="menu-box" id="menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="./groups.html">Groups</a></li>
+          <li><a href="./about.html">About</a></li>
+
+          <li class="btn">
+            <a href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li class="btn btn-primary">
+            <a href="./signup.html"
+              ><i class="fas fa-user-plus"></i>Register
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="profile-hero-container">
+        <div class="user-image">
+          <img src="./images/hero-image-sample.jpg" alt="" />
+        </div>
+        <div class="user-info">
+          <h2 class="user-name">User name</h2>
+          <p class="user-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            fugiat nisi at corporis quas minus error, voluptatum asperiores amet
+            quos quo praesentium quam deserunt veniam explicabo non totam
+            labore. Quibusdam.
+          </p>
+
+          <span class="user-settings" onclick="renderActivity('settings')"
+            ><i class="fas fa-cog"></i>Settings</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="user-activity-section">
+      <div class="user-activity-list">
+        <ul>
+          <li onclick="renderActivity('blogs')">All Posts</li>
+          <li onclick="renderActivity('post')">Post</li>
+          <li onclick="renderActivity('groups')">Joined Groups</li>
+        </ul>
+      </div>
+
+      <div class="user-activity-main" id="activityMain">
+        <div class="blog-container">
+          <div class="blog-img"></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="info-container">
+        <div class="info-col footer-logo">
+          <h3>Hak-Zen</h3>
+        </div>
+        <div class="info-col footer-navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="info-col footer-groups">
+          <h4>Groups</h4>
+          <ul>
+            <li><a href="">Group 1</a></li>
+            <li><a href="">Group 2</a></li>
+            <li><a href="">Group 3</a></li>
+            <li><a href="">Group 4</a></li>
+            <li><a href="">Group 5</a></li>
+            <li><a href="">Group 6</a></li>
+            <li><a href="">Group 7</a></li>
+            <li><a href="">Group 8</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#menu").click(() => {
+        $(".nav").toggleClass("active");
+      });
+
+      let activity = {
+        blogs: {
+          content: `<div class="blog-container">
+          <div class="blog-img"></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>`,
+        },
+
+        post: {
+          content: `
+         <form action="" class="post-form">
+          <div class="input-feild">
+            <label for="postTitle">Title</label>
+            <input type="text" name="postTitle" id="postTitle" />
+          </div>
+          <div class="input-feild">
+            <label for="postCategory">Group</label>
+            <select name="category" id="postCategory">
+              <option value="group1" selected>Group 1</option>
+              <option value="group2">Group 2</option>
+              <option value="group3">Group 3</option>
+              <option value="group4">Group 4</option>
+              <option value="group5">Group 5</option>
+              <option value="group6">Group 6</option>
+              <option value="group7">Group 7</option>
+              <option value="group8">Group 8</option>
+            </select>
+          </div>
+          <div class="input-feild">
+            <label for="postTags">Tags</label>
+            <input type="text" name="postTags" id="postTags" />
+          </div>
+          <div class="input-feild input-textarea">
+            <label for="postContent">Content</label>
+            <textarea
+              name="postContent"
+              id="postContent"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button class="post-btn" type="submit">Post</button>
+        </form>`,
+        },
+
+        groups: {
+          content: `<div class="user-groups">
+          <div class="user-group-container">
+            <div class="group-img">
+              <img src="./images/hero-image-sample.jpg" alt="" />
+            </div>
+            <a href="./blogs.html" class="group-view-btn">View</a>
+          </div>
+        </div>`,
+        },
+
+        settings: {
+          content: `<form action="" class="post-form">
+          <div class="input-feild">
+            <label for="username">Username</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="input-feild">
+            <label for="password">Password</label>
+            <input type="text" name="password" id="password" />
+          </div>
+          <div class="input-feild">
+            <label for="photo">Photo</label>
+            <input type="file" name="photo" id="photo" />
+          </div>
+          <div class="input-feild input-textarea">
+            <label for="postContent">Introduction</label>
+            <textarea
+              name="introduction"
+              id="introduction"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+
+          <button class="post-btn" type="submit">Update</button>
+        </form>`,
+        },
+      };
+
+      function renderActivity(keyword) {
+        let item = activity[keyword];
+        // console.log(item);
+        $("#activityMain").html(item.content);
+      }
+    </script>
+  </body>
+</html>

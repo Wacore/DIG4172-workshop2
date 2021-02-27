@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hak-Zen</title>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link rel="stylesheet" href="./style/blogs.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <section class="hero-section">
+      <header class="hero-header">
+        <div class="logo">Logo Hak-Zen</div>
+        <div class="menu-box" id="menu">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./blogs.html">Blogs</a></li>
+          <li><a href="./groups.html">Groups</a></li>
+          <li><a href="./about.html">About</a></li>
+
+          <li class="btn">
+            <a href="./login.html"><i class="fas fa-sign-in-alt"></i>Login</a>
+          </li>
+          <li class="btn btn-primary">
+            <a href="./signup.html"
+              ><i class="fas fa-user-plus"></i>Register
+            </a>
+          </li>
+        </ul>
+      </header>
+
+      <div class="blogs-hero-container">
+        <div class="blogs-hero-content">
+          <h1 class="blogs-name">Member Blogs</h1>
+          <p class="blogs-text">
+            Share your story with the students who are struggling with similiar
+            issues.
+          </p>
+
+          <form id="search-form" action="">
+            <div class="search-filed">
+              <input type="text" name="searchItem" id="searchItem" />
+              <button class="search-btn" type="submit">Search</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <div class="blogs-container">
+      <section class="filter-section">
+        <div class="categroies">
+          <h3>Categories</h3>
+          <select name="categories" id="blogCategories">
+            <option value="none" selected>None</option>
+            <option value="group1">Group 1</option>
+            <option value="group2">Group 2</option>
+            <option value="group3">Group 3</option>
+            <option value="group4">Group 4</option>
+            <option value="group5">Group 5</option>
+            <option value="group6">Group 6</option>
+            <option value="group7">Group 7</option>
+            <option value="group8">Group 8</option>
+          </select>
+        </div>
+        <hr />
+        <div class="tags">
+          <a href="#" class="tag" onclick="handleFilterTag('tag 1')">Tag 1</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 2')">Tag 2</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 3')">Tag 3</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 4')">Tag 4</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 5')">Tag 5</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 6')">Tag 6</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 7')">Tag 7</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 8')">Tag 8</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 9')">Tag 9</a>
+          <a href="#" class="tag" onclick="handleFilterTag('tag 10')">Tag 10</a>
+        </div>
+      </section>
+
+      <section class="blog-section">
+        <div class="blog-container">
+          <div class="blog-img"></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          <div class="blog-img"><img src="" alt="" /></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          <div class="blog-img"><img src="" alt="" /></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          <div class="blog-img"><img src="" alt="" /></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          <div class="blog-img"><img src="" alt="" /></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          <div class="blog-img"><img src="" alt="" /></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="blog-content">
+              <p class="line-clamp">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+        <div class="blog-container">
+          <div class="blog-img"><img src="" alt="" /></div>
+          <div class="blog-main">
+            <h2 class="blog-title"><a href="blog.html">Blog title</a></h2>
+            <span class="blog-date">MM/DD/YY</span>
+            <p>
+              <a href="#" class="tag" onclick="handleFilterTag('tag 1')"
+                >Tag 1</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 2')"
+                >Tag 2</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 3')"
+                >Tag 3</a
+              >
+              <a href="#" class="tag" onclick="handleFilterTag('tag 4')"
+                >Tag 4</a
+              >
+            </p>
+
+            <div class="line-clamp">
+              <p class="blog-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni,
+                officiis sed culpa eius nisi, autem corrupti consectetur ea
+                pariatur possimus architecto dicta corporis saepe at eligendi
+                minus repudiandae? Aperiam, magnam.
+              </p>
+            </div>
+
+            <a href="blog.html" class="blog-more">Read more</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <ul class="pagination">
+      <li><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li><a href="">3</a></li>
+      <li><a href="">4</a></li>
+      <li><a href="">5</a></li>
+      <li><a href="">6</a></li>
+      <li><a href="">7</a></li>
+      <li><a href="">8</a></li>
+      <li><a href="">9</a></li>
+      <li><a href="">10</a></li>
+    </ul>
+
+    <footer>
+      <div class="info-container">
+        <div class="info-col footer-logo">
+          <h3>Hak-Zen</h3>
+        </div>
+        <div class="info-col footer-navigation">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Blogs</a></li>
+            <li><a href="">Posts</a></li>
+            <li><a href="">About</a></li>
+          </ul>
+        </div>
+        <div class="info-col footer-groups">
+          <h4>Groups</h4>
+          <ul>
+            <li><a href="">Group 1</a></li>
+            <li><a href="">Group 2</a></li>
+            <li><a href="">Group 3</a></li>
+            <li><a href="">Group 4</a></li>
+            <li><a href="">Group 5</a></li>
+            <li><a href="">Group 6</a></li>
+            <li><a href="">Group 7</a></li>
+            <li><a href="">Group 8</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#menu").click(() => {
+        $(".nav").toggleClass("active");
+      });
+
+      function renderGroup(event, keyword) {
+        event.preventDefault();
+
+        let groupItem = groups[keyword];
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+
+        $(".groups-list").css("display", "block");
+
+        $(".groups").addClass("fade-out");
+        $(".groups").addClass("none");
+
+        $(".group-name").text(groupItem.name);
+        $(".intro-title").text(groupItem.title);
+        $(".intro-content").text(groupItem.content);
+      }
+
+      function renderFilterTag(event, keyword) {
+        event.preventDefault();
+      }
+
+      let groups = {
+        group1: {
+          name: "group1",
+          title: "title 1",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group2: {
+          name: "group2",
+          title: "title 2",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group3: {
+          name: "group3",
+          title: "title 3",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+
+        group4: {
+          name: "group4",
+          title: "title 4",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group5: {
+          name: "group5",
+          title: "title 5",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group6: {
+          name: "group6",
+          title: "title 6",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+        group7: {
+          name: "group7",
+          title: "title 7",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+
+        group8: {
+          name: "group8",
+          title: "title 8",
+          content:
+            " Iure libero deleniti, temporibus vero earum iste consequatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat, aliquid, quae minima dolores quasi amet voluptatibus doloremque repellat voluptas, ipsum eum ipsam nemo temporibus laborum vitae impedit magni suscipit porro?",
+        },
+      };
+    </script>
+  </body>
+</html>
