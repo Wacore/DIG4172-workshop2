@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 html {
   scroll-behavior: smooth;
 }
@@ -11,6 +12,8 @@ html {
 
 body {
   font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  color: #013530;
 }
 
 a {
@@ -35,10 +38,16 @@ a {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-color: rgba(20, 20, 20, 0.1);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(63, 135, 166, 0.5)), color-stop(rgba(235, 248, 225, 0.5)), to(rgba(246, 157, 60, 0.5))), url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2089&q=80");
+  background-image: linear-gradient(0.25turn, rgba(63, 135, 166, 0.5), rgba(235, 248, 225, 0.5), rgba(246, 157, 60, 0.5)), url("https://images.unsplash.com/photo-1529156069898-49953e39b3ac?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2089&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(1, 53, 48, 0.1);
 }
 
 .hero-section .hero-header {
+  background-color: rgba(238, 238, 238, 0.8);
   position: absolute;
   top: 0;
   left: 0;
@@ -61,40 +70,53 @@ a {
 
 .hero-section .hero-container {
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
   z-index: 1;
+  text-align: center;
 }
 
 .hero-section .hero-container .hero-text {
-  font-size: 32px;
+  font-size: 46px;
+  color: #013530;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .hero-section .hero-container .hero-sub-text {
-  color: rgba(20, 20, 20, 0.8);
+  color: rgba(1, 53, 48, 0.9);
   margin: 1em 0;
 }
 
 .hero-section .hero-container .hero-action-container a {
   padding: 5px 10px;
-  border: 1px solid #141414;
+  border: 1px solid #179b8f;
   border-radius: 5px;
   margin-right: 0.5em;
+  font-size: 18px;
 }
 
 .hero-section .hero-container .hero-action {
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(23, 155, 143, 0.8);
   color: white;
   -webkit-transition: background-color 100ms ease-in;
   transition: background-color 100ms ease-in;
 }
 
 .hero-section .hero-container .hero-action:hover {
-  background-color: rgba(20, 20, 20, 0.9);
+  background-color: rgba(23, 155, 143, 0.9);
   color: white;
 }
 
+.hero-section .hero-container .hero-sub-action {
+  color: #013530;
+}
+
+.hero-section .hero-container .hero-action-container a:nth-of-type(2) {
+  border: 0;
+}
+
 .intro {
-  height: 50vh;
+  height: 45vh;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -114,13 +136,17 @@ a {
 .intro .intro-container h2 {
   font-size: 28px;
   letter-spacing: 1px;
+  color: rgba(1, 53, 48, 0.6);
 }
 
 .intro .intro-container p {
   -ms-flex-item-align: start;
       align-self: flex-start;
-  margin-top: 1em;
-  font-size: 18px;
+  margin-top: 2em;
+  color: rgba(1, 53, 48, 0.8);
+  width: 100%;
+  max-width: 800px;
+  line-height: 1.5em;
 }
 
 .groups {
@@ -128,26 +154,43 @@ a {
   width: 100%;
   max-width: 1440px;
   padding: 0.5em;
-  background-color: rgba(20, 20, 20, 0.1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.52)), to(rgba(218, 237, 242, 0.73))), url("https://www.contrado.com/blog/wp-content/uploads/2019/07/feature-image-1-1.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(218, 237, 242, 0.73)), url("https://www.contrado.com/blog/wp-content/uploads/2019/07/feature-image-1-1.jpg");
+  background-repeat: repeat;
+  background-size: contain;
 }
 
 .groups .group-card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 40% 20% 30% 10%;
-      grid-template-rows: 40% 20% 30% 10%;
+  -ms-grid-rows: 40% 15% 35% 10%;
+      grid-template-rows: 40% 15% 35% 10%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  -webkit-transition: background-color 100ms ease-in;
+  transition: background-color 100ms ease-in;
+}
+
+.groups .group-card:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(1, 53, 48, 0.2);
+  box-shadow: 5px 5px 15px 5px rgba(1, 53, 48, 0.2);
 }
 
 .groups .group-card .group-img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
-  background-color: rgba(20, 20, 20, 0.8);
+  background-color: rgba(238, 238, 238, 0.8);
   overflow: hidden;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .groups .group-card .group-img img {
@@ -161,14 +204,27 @@ a {
   text-transform: capitalize;
 }
 
+.groups .group-card .card-content {
+  font-size: 14px;
+  color: rgba(1, 53, 48, 0.8);
+  font-weight: 500;
+}
+
 .groups .group-card .card-action {
   padding: 5px 10px;
-  border: 1px solid #141414;
+  border: 1px solid #179b8f;
   border-radius: 5px;
+  -webkit-transition: 100ms ease-in 50ms;
+  transition: 100ms ease-in 50ms;
+}
+
+.groups .group-card .card-action:hover {
+  background-color: #179b8f;
+  color: white;
 }
 
 .features {
-  background-color: rgba(238, 238, 238, 0.5);
+  background-color: #ffffff;
   height: auto;
   width: 100%;
   max-width: 1440px;
@@ -202,6 +258,18 @@ a {
   width: 90%;
   height: 70%;
   background-color: rgba(238, 238, 238, 0.5);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  border: 2px solid #179b8f;
+  padding: 1px;
+  overflow: hidden;
+}
+
+.features .features-container .feature-card .card-img img {
+  width: 90px;
+  height: 90px;
 }
 
 .features .features-container .feature-card .card-content-box {
@@ -218,7 +286,8 @@ a {
   width: 100%;
   max-width: 1440px;
   padding: 0.5em;
-  background-color: rgba(238, 238, 238, 0.9);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 246, 252, 0.52)), to(rgba(218, 237, 242, 0.73))), url("https://i.icanvas.com/list-square/chevron.jpg");
+  background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), rgba(218, 237, 242, 0.73)), url("https://i.icanvas.com/list-square/chevron.jpg");
 }
 
 .user-review .review-container {
@@ -236,12 +305,13 @@ a {
 
 .user-review .review-container .reivew-card {
   width: 350px;
-  height: 400px;
+  height: 250px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 40% 5% 5% 50%;
-      grid-template-rows: 40% 5% 5% 50%;
+  -ms-grid-rows: 15% 12% 73%;
+      grid-template-rows: 15% 12% 73%;
   place-items: center;
+  padding: 1.5em;
 }
 
 .user-review .review-container .reivew-card .card-img {
@@ -250,10 +320,15 @@ a {
   background-color: rgba(238, 238, 238, 0.5);
 }
 
+.user-review .review-container .reivew-card .review-date {
+  font-size: 12px;
+}
+
 .user-review .review-container .reivew-card .card-content {
   -ms-flex-item-align: start;
       align-self: flex-start;
   margin-top: 1em;
+  font-size: 14px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -309,6 +384,9 @@ a {
   }
   .nav li {
     display: block;
+  }
+  .nav li a {
+    color: #179b8f;
   }
   .nav.active {
     height: 200px;
@@ -395,6 +473,13 @@ a {
   .hero-section .hero-header .nav li {
     margin: 0 0.4em;
   }
+  .hero-section .hero-header .nav li a {
+    color: #179b8f;
+    font-size: 14px;
+  }
+  .hero-section .hero-header .nav li a i {
+    margin-right: 0.3em;
+  }
   .hero-section .hero-container {
     position: absolute;
     top: 50%;
@@ -466,6 +551,9 @@ a {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .intro-container p {
+    font-size: 20px;
+  }
   .user-review {
     height: 50vh;
   }
@@ -492,6 +580,9 @@ a {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     place-items: center;
+  }
+  .intro-container p {
+    font-size: 20px;
   }
   .features .features-container {
     height: 45vh;

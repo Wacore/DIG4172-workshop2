@@ -1,7 +1,14 @@
+@mixin imageConatiner {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 body {
   .hero-section {
     display: grid;
     place-items: center;
+    background-image: linear-gradient(#eeeeee, #ffffff);
 
     .about-hero-container {
       height: 75%;
@@ -13,35 +20,46 @@ body {
       #aboutContainer {
         grid-column: 3 / span 6;
         grid-row: 5 / span 2;
+        p {
+          font-size: 20px;
+          letter-spacing: 1px;
+        }
       }
 
       #imageBox1 {
-        background-image: url("../images/hero-image-sample.jpg");
+        background-image: url("https://images.unsplash.com/photo-1562086780-1c95244efd6b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+        @include imageConatiner;
         grid-column: 1 / span 3;
         grid-row: 1 / span 3;
       }
       #imageBox2 {
-        background-image: url("../images/hero-image-sample.jpg");
+        background-image: url("https://images.unsplash.com/photo-1530099486328-e021101a494a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2016&q=80");
+        @include imageConatiner;
+        background-position: 50% 25%;
         grid-column: 5 / span 6;
         grid-row: 1 / span 1;
       }
       #imageBox3 {
-        background-image: url("../images/hero-image-sample.jpg");
-        grid-column: 10 / span 1;
-        grid-row: 2 / span 1;
+        background-image: url("https://images.unsplash.com/photo-1490578474895-699cd4e2cf59?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1951&q=80");
+        @include imageConatiner();
+        grid-column: 9 / span 2;
+        grid-row: 2 / span 2;
       }
       #imageBox4 {
-        background-image: url("../images/hero-image-sample.jpg");
+        background-image: url("https://images.unsplash.com/photo-1496154704336-6c88a94a019a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+        @include imageConatiner;
         grid-column: 5 / span 6;
         grid-row: 9 / span 2;
       }
       #imageBox5 {
-        background-image: url("../images/hero-image-sample.jpg");
+        background-image: url("https://images.unsplash.com/photo-1508904635850-d986b19765d0?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80");
+        @include imageConatiner;
         grid-column: 1 / span 2;
         grid-row: 7 / span 5;
       }
       #imageBox6 {
-        background-image: url("../images/hero-image-sample.jpg");
+        background-image: url("https://images.unsplash.com/photo-1554224116-a159ee9c504f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+        @include imageConatiner;
         grid-column: 10 / span 1;
         grid-row: 6 / span 2;
       }
@@ -53,7 +71,7 @@ body {
 
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-    background-color: rgba($color: #000000, $alpha: 0.5);
+    background-color: rgb(23, 155, 143);
     display: grid;
 
     .about-slogan {
@@ -67,6 +85,9 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #383838;
       }
     }
 
@@ -76,7 +97,7 @@ body {
       justify-self: center;
       border-top-left-radius: 20px;
       border-top-right-radius: 20px;
-      background-color: rgba($color: #eeeeee, $alpha: 1);
+      background-color: rgba($color: #ffffff, $alpha: 0.9);
       padding: 1.5em;
     }
   }
@@ -85,9 +106,13 @@ body {
 @media only screen and (max-width: 500px) {
   body {
     .about-section {
-      grid-template-rows: 20vh 50vh;
+      grid-template-rows: 30vh 40vh;
       width: 500px;
       max-width: 500px;
+
+      .slogan {
+        font-size: 24px;
+      }
     }
   }
 }
@@ -108,6 +133,9 @@ body {
     max-width: 600px;
     width: 100%;
     margin: 0 auto;
+    .slogan {
+      font-size: 22px;
+    }
   }
 }
 
@@ -133,6 +161,7 @@ body {
           max-width: 60%;
           left: 10%;
           transform: translate(0, -50%);
+          font-size: 26px;
         }
       }
 
@@ -177,6 +206,7 @@ body {
           max-width: 60%;
           left: 10%;
           transform: translate(0, -50%);
+          font-size: 28px;
         }
       }
 
@@ -221,6 +251,7 @@ body {
           max-width: 60%;
           left: 10%;
           transform: translate(0, -50%);
+          font-size: 30px;
         }
       }
 

@@ -1,6 +1,13 @@
+$black: rgb(1, 53, 48);
+$primary-color: rgb(23, 155, 143);
+
 body {
   .hero-section {
     height: 30vh;
+    background-image: url("https://images.unsplash.com/photo-1444210971048-6130cf0c46cf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1952&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 
     .group-hero-container {
       position: absolute;
@@ -33,7 +40,8 @@ body {
   }
 
   .groups {
-    background-color: #eee;
+    background-image: none;
+    background-color: #ffffff;
     display: block;
     opacity: 1;
     transition: opacity 200ms ease-out;
@@ -57,18 +65,31 @@ body {
 
     .group-info-container {
       display: grid;
+      background-color: $primary-color;
 
       .intro-side {
         display: grid;
         place-items: center;
+
+        h2 {
+          font-size: 36px;
+          color: white;
+        }
       }
 
       .intro-main {
-        padding: 1.5em;
+        padding: 2.5em;
+        background-color: rgba($color: #eeeeee, $alpha: 0.8);
+        border-radius: 20px;
 
-        h3 {
+        .intro-title {
           text-align: center;
           margin: 0.5em 0;
+          font-size: 24px;
+        }
+
+        .intro-content {
+          line-height: 2em;
         }
       }
     }
@@ -109,12 +130,14 @@ body {
       }
 
       a {
+        background-color: #eee;
         position: absolute;
         right: -100px;
         width: 100px;
         opacity: 1;
         margin-left: 0.5em;
         transition: 150ms ease-in-out;
+        padding: 20px;
       }
 
       &:hover {

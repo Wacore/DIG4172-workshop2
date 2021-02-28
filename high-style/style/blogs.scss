@@ -1,6 +1,13 @@
+$black: rgb(1, 53, 48);
+$primary-color: rgb(23, 155, 143);
+
 body {
   .hero-section {
     height: 30vh;
+    background-image: url("https://images.unsplash.com/photo-1546074177-ffdda98d214f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1567&q=80");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .blogs-hero-container {
@@ -66,7 +73,7 @@ body {
         border: 1px solid black;
         border-radius: 20px;
         font-size: 14px;
-        margin: 0 0.3em;
+        margin: 0.3em;
       }
     }
   }
@@ -84,7 +91,7 @@ body {
       .blog-img {
         height: 100%;
         width: 100%;
-        background-image: url("../images/hero-image-sample.jpg");
+        background-image: url("https://source.unsplash.com/1600x900/?nature,water");
         background-size: cover;
         background-position: center;
       }
@@ -98,11 +105,17 @@ body {
 
         .blog-date {
           display: block;
-          font-size: 14px;
+          font-size: 12px;
+          color: rgba($color: $black, $alpha: 0.8);
         }
 
         p {
           margin: 0.1em 0;
+
+          a {
+            font-size: 14px;
+            color: rgba($color: $black, $alpha: 0.8);
+          }
         }
 
         .blog-content {
@@ -113,7 +126,7 @@ body {
 
           .line-clamp {
             display: -webkit-box;
-            -webkit-line-clamp: 3;
+            -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
           }
         }
