@@ -1,3 +1,10 @@
+$black: rgb(1, 53, 48);
+$primary-color: rgb(23, 155, 143);
+
+.hero-section {
+  background-image: none;
+}
+
 .hero-section .login-container,
 .hero-section .signup-container {
   position: absolute;
@@ -5,7 +12,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  height: 90%;
+  height: 87%;
   width: 95%;
   background-color: white;
   padding: 1em 1.5em;
@@ -18,6 +25,7 @@
     height: 100%;
     display: grid;
     place-items: center;
+    overflow: hidden;
   }
 
   .login-form-container form,
@@ -46,8 +54,16 @@
       }
 
       input[type="submit"] {
-        padding: 8px 0;
+        padding: 10px 0;
         margin: 1.5em 0;
+        background-color: rgba($color: $primary-color, $alpha: 0.8);
+        color: white;
+        border: none;
+        font-size: 18px;
+
+        &:hover {
+          background-color: rgba($color: $primary-color, $alpha: 1);
+        }
       }
 
       .input-field {
@@ -60,11 +76,35 @@
         input {
           margin: 0.5em 0;
           width: 100%;
-          height: 25px;
+          padding: 5px 10px;
+          font-size: 18px;
+          border: none;
         }
       }
     }
   }
+}
+
+.login-container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(218, 237, 242, 0.73)
+    ),
+    url("https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1950&q=80");
+  background-position: center;
+  background-size: cover;
+}
+
+.signup-container {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(245, 246, 252, 0.52),
+      rgba(218, 237, 242, 0.73)
+    ),
+    url(" https://images.unsplash.com/photo-1542391085-dd1c64a52bd5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2850&q=80");
+  background-position: center;
+  background-size: cover;
 }
 
 footer {
@@ -90,14 +130,33 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+@media only screen and (min-width: 1025px) {
   .hero-section .login-container {
-    grid-template-columns: calc(100% - 450px) 450px;
+    grid-template-columns: calc(100% - 500px) 500px;
     align-items: center;
+
+    .login-form-container {
+      width: 100%;
+      max-width: 450px;
+    }
   }
 
   .hero-section .signup-container {
-    grid-template-columns: 450px calc(100% - 450px);
+    grid-template-columns: 500px calc(100% - 500px);
     align-items: center;
+  }
+
+  .signup-cover-box,
+  .login-cover-box {
+    span {
+      font-size: 36px;
+      color: rgba($color: $black, $alpha: 0.8);
+    }
+  }
+
+  .signup-cover-box span {
+    font-size: 26px;
+    width: 450px;
+    color: rgba($color: $black, $alpha: 0.8);
   }
 }

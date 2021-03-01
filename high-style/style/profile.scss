@@ -1,3 +1,7 @@
+.hero-section {
+  background-image: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80");
+}
+
 .blog-container {
   width: 450px;
   height: 350px;
@@ -7,7 +11,7 @@
   .blog-img {
     height: 100%;
     width: 100%;
-    background-image: url("../images/hero-image-sample.jpg");
+    background-image: url("https://source.unsplash.com/1600x900/?nature,water");
     background-size: cover;
     background-position: center;
   }
@@ -98,6 +102,7 @@ body {
         .user-name {
           text-align: center;
           font-size: 20px;
+          margin-bottom: 0.3em;
         }
 
         .user-desc {
