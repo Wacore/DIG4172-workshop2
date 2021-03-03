@@ -16,7 +16,7 @@
   <body>
     <section class="hero-section">
       <header class="hero-header">
-        <div class="logo">Logo Hak-Zen</div>
+        <div class="logo">Hak-Zen</div>
         <div class="menu-box" id="menu">
           <i class="fas fa-bars"></i>
         </div>
@@ -57,7 +57,12 @@
               </div>
 
               <a href="#">Forget Password</a>
-              <input type="submit" value="Login" />
+              <input
+                id="loginBtn"
+                type="button"
+                value="Login"
+                onclick="(e) => handleLogin(e)"
+              />
             </div>
           </form>
         </div>
@@ -102,6 +107,13 @@
       $("#menu").click(() => {
         $(".nav").toggleClass("active");
       });
+
+      document
+        .getElementById("loginBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          $(location).attr("href", "./profile.html");
+        });
     </script>
   </body>
 </html>

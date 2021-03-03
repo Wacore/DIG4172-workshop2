@@ -16,7 +16,7 @@
   <body>
     <section class="hero-section">
       <header class="hero-header">
-        <div class="logo">Logo Hak-Zen</div>
+        <div class="logo">Hak-Zen</div>
         <div class="menu-box" id="menu">
           <i class="fas fa-bars"></i>
         </div>
@@ -58,15 +58,15 @@
                 <input type="text" name="password" id="password" />
               </div>
               <div class="input-field">
-                <label for="comfirmPassword">Comfirm password</label>
+                <label for="confirmPassword">Confirm password</label>
                 <input
                   type="text"
-                  name="comfirmPassword"
-                  id="comfirmPassword"
+                  name="confirmPassword"
+                  id="confirmPassword"
                 />
               </div>
 
-              <input type="submit" value="Create an account" />
+              <input id="signupBtn" type="submit" value="Create an account" />
             </div>
           </form>
         </div>
@@ -117,6 +117,13 @@
       $("#menu").click(() => {
         $(".nav").toggleClass("active");
       });
+
+      document
+        .getElementById("signupBtn")
+        .addEventListener("click", function (event) {
+          event.preventDefault();
+          $(location).attr("href", "./profile.html");
+        });
     </script>
   </body>
 </html>
